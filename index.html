@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.css" integrity="sha256-+YuminEhUpSYuuvNJUBHxYlBqnNq4GSXZiWqEK6vsm8=" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <body>
 
-<p>Image to use:</p>
+<script>
+    $(document).foundation();
+</script>
+
+
+<div class="callout warning">Image to use:
 <img id="rec1" src="records-01.svg" alt="AlbumOne" width="220" height="277">
 <img id="rec2" src="records-02.svg" alt="AlbumTwo" width="220" height="277">
 <img id="rec3" src="records-03.svg" alt="AlbumeThree" width="220" height="277">
+</div>
 
-<p>Canvas to fill:</p>
+<div class="callout success">Canvas to fill:
 <canvas id="myCanvas1" width="250" height="300"
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -18,9 +27,14 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
-<p><button onclick="myCanvas1()">Play Me!</button></p>
-<p><button onclick="myCanvas2()">Play Me!</button></p>
-<p><button onclick="myCanvas3()">Play Me!</button></p>
+<div class="button-group">
+<a class="button" onclick="myCanvas1()">Play Me!</a>
+<a class="button" onclick="myCanvas2()">Play Me!</a>
+<a class="button" onclick="myCanvas3()">Play Me!</a>
+</div>
+</div>
+
+
 
 <script>
 function myCanvas1() {
